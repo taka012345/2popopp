@@ -24,8 +24,8 @@ a {
 
 .top-wrapper{
     padding:180px 0 100px 0;
-    background-image:url(https://img.benesse-cms.jp/pet-cat/item/image/normal/resized/resized_6837592a-4276-470c-9051-7c9944600261.jpg);
-    color:rgb(39, 32, 177);
+    background-image:url(images/cat.jpg);
+    color:rgba(3, 3, 14, 0.966);
     background-size:cover;
     text-align:center;
 
@@ -153,21 +153,7 @@ header{
   font-weight:normal;
 }
 
-.lesson{
-  float:left;
-  width:25%;
-}
 
-.lesson-icon{
-  position:relative;
-}
-
-.lesson-icon p{
-  position:absolute;
-  top:44%;
-  width:100%;
-  color:white;
-}
 
 .text-contents{
   width:80%;
