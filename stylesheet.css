@@ -24,8 +24,8 @@ a {
 
 .top-wrapper{
     padding:180px 0 100px 0;
-    background-image:url(https://pakutaso.cdn.rabify.me/shared/img/page/thumb-noraneko.jpg?d=600https://prog-8.com/images/html/advanced/top.png);
-    color:white;
+    background-image:url(https://img.benesse-cms.jp/pet-cat/item/image/normal/resized/resized_6837592a-4276-470c-9051-7c9944600261.jpg);
+    color:rgb(39, 32, 177);
     background-size:cover;
     text-align:center;
 
@@ -85,15 +85,10 @@ a {
 header{
   height:65px;
   width:100%;
-  background-color:rgba(34,49,52,0.9);
+  background-color:rgba(123, 125, 133, 0.914);
   position:fixed;
   top:0;
   z-index:10;
-}
-
-.logo{
-  width:124px;
-  margin-top:20px;
 }
 
 .header-left{
@@ -101,20 +96,29 @@ header{
 }
 
 .header-right{
-  float:right;
-  margin-right:-25px;
-}
-
-.header-right a:hober{
-  background-color:rgba(255,255,255,0.3);
+  float:right;  
+  margin-right: -25px;
 }
 
 .menu-icon{
-  color:white;
+  color:rgb(239, 233, 233);
   float:right;
   font-size:25px;
   padding:21px 0;
   display:none;
+}
+
+.header-left a{
+  line-height:65px;
+  padding: 0 25px;
+  color:white;
+  display:block;
+  float:left;
+  transition:all 0.5s;
+}
+/*左上のヘッダー文字を選択した時、色が変化する*/
+.header-left a:hover{
+  background-color: rgb(196, 195, 199);
 }
 
 
@@ -125,6 +129,10 @@ header{
   display:block;
   float:left;
   transition:all 0.5s;
+}
+
+.header-right a:hover{
+  background-color: rgba(183, 188, 194, 0.896);
 }
 
 .lesson-wrapper{
