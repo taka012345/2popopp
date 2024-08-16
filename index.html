@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html上級</title>
-    <script src="https://kit.fontawesome.com/35b1c97052.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
   </head> 
@@ -12,19 +12,31 @@
     <header>
       <div class="container">
         <div class="header-left">
-          <a href="#">ホーム</a>
-                 
+          <a href="index.html">ホーム</a>   
         </div>
-
-        <span class="fa fa-bars menu-icon"></span>
-
+        
+<!--a hrefはリンク先ページ、classはどのcssかを指定-->
         <div class="header-right">
-          <a href="#">レッスン</a>
-          <a href="#">新規登録</a>
-          <a href="#" class="login">ログイン</a>
+
+          <div class="menu-links">
+            <a href="index2.html" >レッスン</a>
+            <a href="index3.html" >メニュー</a>
+            <a href="index4.html" >ログイン</a>
+          </div>
+
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+          <div class="menu-dropdown">
+            <a href="index2.html" >レッスン</a>
+            <a href="index3.html" >メニュー</a>
+            <a href="index4.html" >ログイン</a>
+          </div>
+
         </div>
+        <div class="clear"></div>          
       </div>
     </header>
+
     <div class="top-wrapper">
       <div class="container">
         <h1>三毛猫</h1>
@@ -56,5 +68,6 @@
         <p>猫は魚が好きです</p>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
