@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* ハンバーガーメニューアイコン */
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(123, 125, 133, 0.914);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-left {
+    float: left;
+    margin-left: -25px;
+  }
+  
+  .header-left a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  /* 左上のヘッダー文字を選択した時、色が変化する */
+  .header-left a:hover {
+    background-color: rgb(196, 195, 199);
+  }
+  
+  .header-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* ヘッダーメニューをブロックわけする */
+  .menu-links a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: #f0f0f0;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(183, 188, 194, 0.896);
+  }
+  
+  /* ハンバーガーメニューアイコン */
+  .menu-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: none;
+    padding: 20px;
+  }
+  
+  .menu-icon:hover {
+    color: #aaa;
+    transform: scale(1.1);
+  }
+  
+  /* メニューの表示切り替え */
+  #menu-toggle {
+    display: none;
+  }
+  
+  #menu-toggle:checked + .menu-icon + .menu-dropdown {
+    display: block;
+  }
+  
+  .menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: rgba(183, 188, 194, 0.96);
+    min-width: 150px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .menu-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .menu-dropdown a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-links {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  /* ページ中央 */
+  main {
+    margin-top: 65px; /* ヘッダーの高さ分のマージンを追加 */
+    padding: 20px; /* 適切なパディングを追加 */
+  }
+  
+  .intoro {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .intoro h1 {
+    font-size: 45px;
+    color: rgba(3, 3, 14, 0.966);
+  }
+  
+  footer {
+    background-color: #9e9f9a;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  footer h3 {
+    margin: 0;
+  }
+  
+  footer p {
+    color: rgb(15, 15, 26);
+    font-size: 12px;
+  }
+  

@@ -4,35 +4,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ブログ</title>
-    <script src="https://kit.fontawesome.com/35b1c97052.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet2.css">
     <link rel="stylesheet" href="responsive.css">
   </head> 
   <body>
     <header>
       <div class="container">
         <div class="header-left">
-          <a href="index.html">ホーム</a>
-                 
+          <a href="index.html">ホーム</a>   
         </div>
-
-        <span class="fa fa-bars menu-icon"></span>
-
+        
         <div class="header-right">
-          <a href="#">レッスン</a>
-          <a href="#">ブログ</a>
-          <a href="#" class="login">ログイン</a>
+          <div class="menu-links">
+            <a href="index2.html" >ブログ</a>
+            <a href="index3.html" >メニュー</a>
+            <a href="index4.html" >ログイン</a>
+          </div>
+
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+          <div class="menu-dropdown">
+            <a href="index2.html" >ブログ</a>
+            <a href="index3.html" >メニュー</a>
+            <a href="index4.html" >ログイン</a>
+          </div>
+
         </div>
+        <div class="clear"></div>          
       </div>
     </header>
-    <wrapper>
-        <h1>猫の飼い方</h1>
-    </wrapper>
-    
+
+<!--ページ中央-->
+    <main>
+      <article>
+        <section>
+          <h1>初めてのブログ</h1>
+          <p><time datetime="2024-8-16">2024年8月16日</time></p>
+          <hr>
+          <p>初めてのブログ。ここは練習用ブログです。
+            <br><br>より効率的でストレスのないページを作っていくことが目的です。
+            <br><br>今日はハンバーガーメニューを作成しようとしましたがうまくいかずに断念しました。
+          </p>
+        </section>
+      </article>
+    </main>
+
+<!--下段のフッター-->
     <footer>
-        <h3>猫のページ</h3>
-        <p>猫は魚が好きです</p>
-      </div>
+      <h3>ブログもやっています。サイト右上のアイコンバーからどうぞ</h3>
+      <p>猫に関するwebサイト</p>
     </footer>
   </body>
 </html>

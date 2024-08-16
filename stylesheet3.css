@@ -131,3 +131,11 @@ header {
       display: block; /* Show the hamburger menu icon */
   }
 }
+
+/*ヘッダーと中央のメインなんかが重ならない様にする
+margin-topは上のスペース
+paddingは左のスペース*/
+main{
+  margin-top: 60px;
+  padding: 20px;
+}
