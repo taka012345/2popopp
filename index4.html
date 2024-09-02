@@ -1,62 +1,71 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ヘッダーハンバーガーメニュー</title>
+    <title>個人ブログ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="stylesheet3.css">
-</head>
-<body>
+    <link rel="stylesheet" href="stylesheet2.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+      /* 1本目の区切り線のスタイル */
+      .hr-style-1 {
+        border: none; /* 既定のスタイルを取り除く */
+        height: 3px; /* 高さを指定して太さを調整 */
+        background-color: #333; /* 背景色を設定 */
+        margin: 20px 0;
+      }
+  </style>
+  </head> 
+  <body>
     <header>
-        <div class="container">
-            <div class="header-left">
-                <a href="index.html">ホーム</a>
-                <a href="#">サービス</a>
-                <a href="#">お問い合わせ</a>
-            </div>
-            <div class="header-right">
-                <div class="menu-links">
-                    <a href="#">メニュー1</a>
-                    <a href="#">メニュー2</a>
-                    <a href="#">メニュー3</a>
-                </div>
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
-                <div class="menu-dropdown">
-                    <a href="#">メニュー1</a>
-                    <a href="#">メニュー2</a>
-                    <a href="#">メニュー3</a>
-                </div>
-            </div>
-            <div class="clear"></div>
+      <div class="container">
+        <div class="header-left">
+          <a href="index.html">ホーム</a>   
         </div>
+        
+        <div class="header-right">
+          <div class="menu-links">
+            <a href="index2.html" >個人ブログ</a>
+            <a href="index3.html" >情報ブログ</a>
+            <a href="index4.html" >ログイン</a>
+          </div>
+
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+          <div class="menu-dropdown">
+            <a href="index2.html" >個人ブログ</a>
+            <a href="index3.html" >情報ブログ</a>
+            <a href="index4.html" >ログイン</a>
+          </div>
+
+        </div>
+        <div class="clear"></div>          
+      </div>
     </header>
 
-<!--中央-->
-<main>
-    <article>
-      <section>
-        <h1>技術の殴り書き</h1>
-        <p><time datetime="2024-8-16">2024年8月16日</time></p>
-        <p>技術を殴り書いていきます
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
+<!--ページ中央-->
+    <main>
+      <article>
+        <section class="intoro">
+        <h2>メモ</h2>
+ <!--ブログテンプレート
+        <h1></h1>
+        <p><time　datetime="2024--">2024年月日</time></p><hr>
+        <p>
         <br><br>
         </p>
-      </section>
-    </article>
-  </main>
-</body>
+        -->
+        
+        <p>メモをかいていく</p>  
+        </section>
+      </article>
+    </main>
+
+<!--下段のフッター-->
+    <footer>
+      <h3>ここはブログページです</h3>
+      <p>いい湯だな</p>
+    </footer>
+  </body>
 </html>

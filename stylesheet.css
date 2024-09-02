@@ -52,7 +52,7 @@ header{
   transition:all 0.5s;
 }
 
-/*左上のヘッダー文字を選択した時、色が変化する*/
+/*カーソルを上に置いた時に色が変化する*/
 .header-left a:hover{
   background-color: rgb(196, 195, 199);
 }
@@ -125,7 +125,7 @@ header{
   background-color: rgba(255,255,255,0.1);
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
   .menu-links {
     display: none;
   }
@@ -133,7 +133,7 @@ header{
   .menu-icon {
     display: block;
   }
-  
+
 }
 
 /*ページ中央*/

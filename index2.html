@@ -3,10 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ブログ</title>
+    <title>個人ブログ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="stylesheet2.css">
     <link rel="stylesheet" href="responsive.css">
+    <style>
+      /* 1本目の区切り線のスタイル */
+      .hr-style-1 {
+        border: none; /* 既定のスタイルを取り除く */
+        height: 3px; /* 高さを指定して太さを調整 */
+        background-color: #333; /* 背景色を設定 */
+        margin: 20px 0;
+      }
+  </style>
   </head> 
   <body>
     <header>
@@ -17,16 +26,16 @@
         
         <div class="header-right">
           <div class="menu-links">
-            <a href="index2.html" >ブログ</a>
-            <a href="index3.html" >メニュー</a>
+            <a href="index2.html" >個人ブログ</a>
+            <a href="index3.html" >情報ブログ</a>
             <a href="index4.html" >ログイン</a>
           </div>
 
           <input type="checkbox" id="menu-toggle">
           <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
           <div class="menu-dropdown">
-            <a href="index2.html" >ブログ</a>
-            <a href="index3.html" >メニュー</a>
+            <a href="index2.html" >個人ブログ</a>
+            <a href="index3.html" >情報ブログ</a>
             <a href="index4.html" >ログイン</a>
           </div>
 
@@ -38,22 +47,63 @@
 <!--ページ中央-->
     <main>
       <article>
-        <section>
-          <h1>初めてのブログ</h1>
-          <p><time datetime="2024-8-16">2024年8月16日</time></p>
-          <hr>
-          <p>初めてのブログ。ここは練習用ブログです。
-            <br><br>より効率的でストレスのないページを作っていくことが目的です。
-            <br><br>今日はハンバーガーメニューを作成しようとしましたがうまくいかずに断念しました。
+        <section class="intoro">
+          <h2>個人ブログ</h2>
+<!--ブログテンプレート
+          <h1></h1>
+          <p><time　datetime="2024--">2024年月日</time></p><hr>
+          <p>
+          <br><br>
           </p>
+          -->
+
+          <h1>ドメインとサーバーの設定ができない</h1>
+          <p><time　datetime="2024-8-29">2024年8月29日</time></p><hr>
+          <p>ドメインとサーバーの設定ができなくて苦戦しています。
+          <br>あれは一体どうやるのかDNS？CANEM？レコード？何がなんだかさっぱりです。
+          <br>よくわからないので少しずつ進めることにしました。
+          <br>いっぺんにやろうとすると情報多くなりすぎて頭パンクしてしまうので。
+          <br><br>今日はここでおしまいです。
+          </p>
+          
+          <h1>ブログを引っ越しました</h1>
+          <p><time　datetime="2024-8-27">2024年8月27日</time></p><hr>
+          <p>ブログを引っ越しました。
+          <br><br><br>ここが新しい活動場所となります。
+          <br>これからここで役立つ情報を書いていこうと思います。
+          <br><br>この前までエクスサーバーのワードプレスを使っていくつかブログをかいたのですが、いろいろな面を考慮してまずはここでブログを書き進めて行くことがいいと判断しました。
+          <br>ワードプレスがないとリストアップの項目を入れることも分かりません。
+          <br><br><br>早速勉強してこのブログに載せていきたいと思います。
+            <ul>
+              <li>チャットGPTでコードを調べる</li>
+              <li>コードの書き込み</li>
+              <li>反映されているかページを確認</li>
+            </ul>
+          すぐにできました。以前勉強していたものなので簡単でした。
+          <br><br><br>今日はここまでにしておきます。明日はもっと勉強してよりよいページにしていきたいです。
+          </p>
+
+          <h1>２回目のブログ</h1>
+          <p><time datetime="2024-8-17">2024年8月17日</time></p><hr>
+          <p>phpのtutorial動画を見ました。４時間ありました。
+          <br><br>でも２倍速にして殆どを飛ばしたので３０分くらいで見終わりました
+          </p>
+
+          <h1>初めてのブログ</h1>
+          <p><time datetime="2024-8-16">2024年8月16日</time></p><hr>
+          <p>初めてのブログ。ここは練習用ブログです。
+          <br><br>より効率的でストレスのないページを作っていくことが目的です。
+          <br><br>今日はハンバーガーメニューを作成しようとしましたがうまくいかずに断念しました。
+          </p>
+        
         </section>
       </article>
     </main>
 
 <!--下段のフッター-->
     <footer>
-      <h3>ブログもやっています。サイト右上のアイコンバーからどうぞ</h3>
-      <p>猫に関するwebサイト</p>
+      <h3>ここはブログページです</h3>
+      <p>いい湯だな</p>
     </footer>
   </body>
 </html>
