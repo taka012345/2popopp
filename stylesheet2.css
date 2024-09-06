@@ -1,3 +1,6 @@
+
+/*個人的ブログ、情報ブログ*/
+
 * {
   box-sizing: border-box;
 }
@@ -145,6 +148,57 @@ header {
 main {
   margin-top: 5px; /* ヘッダーの高さ分のマージンを追加 */
   padding: 20px; /* 適切なパディングを追加 */
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+/* 記事部分のスタイル　*/
+article {
+  flex: 1;
+  margin-right: 20px; /*サイドバーとの感覚*/
+}
+
+/* サイドバーのスタイル */
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* サイドバー内のリストのスタイル */
+.sidebar h3 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style-type: disc; /* リストに「・」を表示 */
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* サイドバーとメインコンテンツをクリア */
+.clear {
+  clear: both;
 }
 
 .intoro {

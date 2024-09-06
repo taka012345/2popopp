@@ -1,3 +1,6 @@
+
+/*index*/
+
 *{
   box-sizing:border-box;
 }
@@ -213,6 +216,11 @@ header{
   font-weight:normal;
 }
 
+/* styles.css */
+.title-bar {
+  border-left: 5px solid #007BFF; /* 左側にバーを追加 */
+  padding-left: 10px; /* バーとテキストの間にスペースを作る */
+}
 
 
 .text-contents{
