@@ -152,12 +152,6 @@ main {
   justify-content: space-between;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-
 /* 記事部分のスタイル　*/
 article {
   flex: 1;
