@@ -215,6 +215,17 @@ article {
   padding: 10px;
 }
 
+h2 {
+  font-size: 1.17em; /* h3タグと同じサイズに変更 */
+}
+
+.custom-heading {
+  border-left: 5px solid rgb(109, 109, 211);  /* 左に青いバーをつける */
+  background-color: #f0f0f0;    /* バックグラウンドカラーを薄いグレーに設定 */
+  padding: 10px;               /* テキストとバーとの余白 */
+  margin: 10px 0;              /* 上下の余白 */
+}
+
 footer {
   background-color: #9e9f9a;
   padding-top: 30px;
