@@ -137,7 +137,7 @@ header {
 /* ページ中央 */
 main {
   margin-top: 0px; /* ヘッダーの高さ分のマージンを追加 */
-  padding: 20px; /* 適切なパディングを追加 */
+  padding: 0 20px; /* 適切なパディングを追加 */
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
