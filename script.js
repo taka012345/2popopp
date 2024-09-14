@@ -1,12 +1,12 @@
 let lastScrollTop = 0;
 const header = document.querySelector('header');
-const threshold = 10; // スクロールの感度を調整する閾値（px）
+const threshold = 100; // スクロールの感度を調整する閾値（px）
 
 window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     // スクロールの変化量が閾値を超える場合のみ処理
-    if (scrollTop === 0) {
+    if (scrollTop <= 30) {
         header.style.top = '0';
     } else {
         if (Math.abs(scrollTop - lastScrollTop) > threshold) {

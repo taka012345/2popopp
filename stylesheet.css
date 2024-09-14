@@ -35,7 +35,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: top 0.3s ease;
+  transition: top 0.6s ease;
 }
 
 .header-left {
@@ -138,7 +138,7 @@ header {
 /* ページ中央 */
 main {
   margin-top: 0px; /* ヘッダーの高さ分のマージンを追加 */
-  padding: 0 30px;
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;

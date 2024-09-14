@@ -33,6 +33,7 @@ header {
   background-color: rgba(123, 125, 133, 0.914);
   position: fixed;
   top: 0;
+  transition: top 0.6s ease;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -139,7 +140,7 @@ header {
 /* ページ中央 */
 main {
   margin-top: 0px; /* ヘッダーの高さ分のマージンを追加 */
-  padding: 0 30px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
 }
