@@ -137,13 +137,8 @@ header {
 /* ページ中央 */
 main {
   margin-top: 0px; /* ヘッダーの高さ分のマージンを追加 */
-  padding: 0 10px; /* 適切なパディングを追加 */
   display: flex;
   justify-content: space-between;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -160,12 +155,10 @@ main ul li {
 /* 記事部分のスタイル　*/
 article {
   flex: 1;
-  margin-right: 20px; /*サイドバーとの感覚*/
-  width: 100%;
 }
 
 .intoro {
-  padding: 100px 0;
+  padding: 60px 0;
   text-align: left;
   margin-left: auto; /* デフォルトのマージン */
   margin-right: auto;
