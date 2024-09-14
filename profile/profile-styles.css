@@ -29,6 +29,7 @@ a {
 header {
   height: 50px;
   width: 100%;
+  padding: 0 10px;
   background-color: rgba(123, 125, 133, 0.914);
   position: fixed;
   top: 0;
@@ -138,6 +139,7 @@ header {
 /* ページ中央 */
 main {
   margin-top: 0px; /* ヘッダーの高さ分のマージンを追加 */
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
 }
