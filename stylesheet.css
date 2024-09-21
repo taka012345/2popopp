@@ -35,7 +35,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: top 0.6s ease;
+  transition: top 0.5s ease;
 }
 
 .header-left {
@@ -154,21 +154,23 @@ main ul li {
   margin-bottom: 10px; /* 必要に応じてリスト項目間の余白を調整 */
 }
 
+.hr-style-1 {
+  border: none; /* 既定のスタイルを取り除く */
+  height: 3px; /* 高さを指定して太さを調整 */
+  background-color: #333; /* 背景色を設定 */
+  margin: 20px 0;
+}
+
 /* 記事部分のスタイル　*/
 article {
   flex: 1;
 }
 
 .intoro {
-  padding: 60px 0;
-  text-align: left;
+  padding: 70px 0;
   margin-left: auto; /* デフォルトのマージン */
   margin-right: auto;
   max-width: 700px;
-}
-
-.intoro h1 {
-  font-size: 1.17em;
 }
 
 .custom-heading {
@@ -199,6 +201,48 @@ li {
 ul{
   text-align: center;
 }
+
+/* ボタンのコンテナ */
+.button-container {
+  text-align: center; /* ボタンを中央に配置 */
+  margin: 20px 0; /* 上下の余白を追加 */
+}
+
+/* 共通ボタンスタイル */
+.button-container a {
+  display: inline-block;
+  width: 150px; /* 同じ幅に固定 */
+  height: 30px; /* 同じ高さに固定 */
+  line-height: 30px; /* テキストをボタンの中央に表示 */
+  padding: 0; /* 余白をリセット */
+  font-size: 15px; /* テキストサイズを統一 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-align: center; /* テキストを中央に配置 */
+  box-sizing: border-box; /* パディングの影響を防ぐ */
+}
+
+.twitter-button {
+  background-color: #27a2ee;
+}
+
+.twitter-button:hover {
+  background-color: #54b3ed;
+}
+
+.youtube-button {
+  background-color: #FF0000; /* YouTubeの赤色 */
+}
+
+.youtube-button:hover {
+  background-color: #cc0000;
+}
+
+
+
 
 footer {
   background-color: #a5bce1;
