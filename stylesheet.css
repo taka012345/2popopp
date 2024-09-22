@@ -211,7 +211,7 @@ ul{
 /* 共通ボタンスタイル */
 .button-container a {
   display: inline-block;
-  width: 150px; /* 同じ幅に固定 */
+  width: 110px; /* 同じ幅に固定 */
   height: 30px; /* 同じ高さに固定 */
   line-height: 30px; /* テキストをボタンの中央に表示 */
   padding: 0; /* 余白をリセット */
@@ -226,23 +226,20 @@ ul{
 }
 
 .twitter-button {
-  background-color: #27a2ee;
+  background-color: #6fb5e1;
 }
 
 .twitter-button:hover {
-  background-color: #54b3ed;
+  background-color: #9cc9e4;
 }
 
 .youtube-button {
-  background-color: #FF0000; /* YouTubeの赤色 */
+  background-color: #e65b5b; /* YouTubeの赤色 */
 }
 
 .youtube-button:hover {
-  background-color: #cc0000;
+  background-color: #e79595;
 }
-
-
-
 
 footer {
   background-color: #a5bce1;
@@ -256,6 +253,6 @@ footer h3 {
 }
 
 footer p {
-  color: rgb(15, 15, 26);
+  color: white;
   font-size: 12px;
 }
