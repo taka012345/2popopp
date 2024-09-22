@@ -24,6 +24,14 @@ a {
   position: relative;
 }
 
+/* 1本目の区切り線のスタイル */
+.hr-style-1 {
+  border: none; /* 既定のスタイルを取り除く */
+  height: 3px; /* 高さを指定して太さを調整 */
+  background-color: #333; /* 背景色を設定 */
+  margin: 20px 0;
+}
+
 /* ハンバーガーメニューアイコン */
 
 header {
@@ -182,6 +190,45 @@ h2 {
   background-color: #f0f0f0;    /* バックグラウンドカラーを薄いグレーに設定 */
   padding: 10px;               /* テキストとバーとの余白 */
   margin: 10px 0;              /* 上下の余白 */
+}
+
+/* ボタンのコンテナ */
+.button-container {
+  text-align: center; /* ボタンを中央に配置 */
+  margin: 20px 0; /* 上下の余白を追加 */
+}
+
+/* 共通ボタンスタイル */
+.button-container a {
+  display: inline-block;
+  width: 110px; /* 同じ幅に固定 */
+  height: 30px; /* 同じ高さに固定 */
+  line-height: 30px; /* テキストをボタンの中央に表示 */
+  padding: 0; /* 余白をリセット */
+  font-size: 15px; /* テキストサイズを統一 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-align: center; /* テキストを中央に配置 */
+  box-sizing: border-box; /* パディングの影響を防ぐ */
+}
+
+.twitter-button {
+  background-color: #6fb5e1;
+}
+
+.twitter-button:hover {
+  background-color: #9cc9e4;
+}
+
+.youtube-button {
+  background-color: #e65b5b; /* YouTubeの赤色 */
+}
+
+.youtube-button:hover {
+  background-color: #e79595;
 }
 
 footer {
