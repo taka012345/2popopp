@@ -8,15 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="blog-styles.css">
     <link rel="stylesheet" href="responsive.css">
-    <style>
-      /* 1本目の区切り線のスタイル */
-      .hr-style-1 {
-        border: none; /* 既定のスタイルを取り除く */
-        height: 3px; /* 高さを指定して太さを調整 */
-        background-color: #333; /* 背景色を設定 */
-        margin: 20px 0;
-      }
-  </style>
+   
   </head> 
   <body>
     <header>
@@ -53,6 +45,64 @@
           <p><time datetime="2024-09-">2024-9-</time></p><hr>
           <br>
           -->
+          <h1>忙しい</h1>
+          <p><time datetime="2024-09-24">2024-9-24</time></p><hr>
+            <p>毎日が非常にいそがしいです。</p>
+          <br>
+
+          <h1>サイトの検索エンジンのインデックス作成、プライバシー管理するrobots.txt</h1>
+          <p><time datetime="2024-09-23">2024-9-23</time></p><hr>
+          <p>自身のサイトの検索エンジンのインデックス作成、サイトのプライバシーを管理する手段。</p>
+          <p>それがrobots.txtというファイルです。</p>
+          <p>このファイルをサイトのルートディレクトリに入れて使います。</p>
+          <p>何を行うか詳しく書いていきます。</p>
+          <strong><p>まずrobots.txtファイルはこんな中身です。</p></strong>
+            <ul>
+              <li>User-agent: [クローラー名] : 全てのクローラーに全てのページを許可する
+                <br>Disallow: [禁止するパス] : 全てのクローラーに特定のディレクトリを禁止する
+                <br>Allow: [許可するパス] : 特定のクローラーに特定のページを禁止する</li>
+              </ul>
+          <strong><p>使用目的</p></strong>
+            <ul>
+              <li>特定のページや情報が検索エンジンにインデックスされないようにする</li>
+              <li>大量のクローラーが同時にサイトにアクセスすることでサーバーに負荷がかかるのを防ぐ</li>
+              <li>一部のコンテンツ（例えば、開発中のページやテスト用のページなど）を公開せずに管理する</li>
+            </ul>
+          <strong><p>注意点</p></strong>
+            <p>絶対的な制約ではない。一部の悪意あるボットはこのファイルを無視することもある。
+              機密情報を隠す手段ではない。</p>
+            <p>ということらしいです。もういろんな横文字もあって訳分かりません。</p>
+            <br>
+          <h2>ツイッターにタグの画像が表示されない時、robots.txtを使う</h2>
+            <p>ツイッターのタグで画像が表示されなかったためrobots.txtを使用しました。</p>
+            <p>robots.txtは画像が表示されない原因の一つです。
+              僕はこれを設定すると解決しました。設定方法を書いていきます。</p>
+            <p>まず状況を確認します。
+              <ul>
+                <li>Twitter Card Validatorと検索</li>
+                <li>画像を表示させたいページのURLを入力して"Preview card"をクリック</li>
+                <li>状況が表示されます</li>
+                <li>問題なければ少し時間をおいてからツイッターで再度投稿すればOK</li>
+                <li>問題があれば下の方法↓の設定を進めましょう</li>
+              </ul>
+            </p>
+            <strong><p>robots.txtの設定</p></strong>
+              <ul>
+                <li>VSCodeのルートディレクトリに"robots.txt"を作成</li>
+                <li>User-agent: *
+                  <br>Disallow: /private/
+                  <br>Allow: /
+                  <br>これを入力して保存してサイトにアップロード</li>
+                <li>サイトでhttps://iiyudana-blog.com(自分のサイトURL)/robots.txtを入力し検索</li>
+                <li>User-agent: *
+                  <br>Disallow: /private/
+                  <br>Allow: /
+                  <br>と表示されたら正しく設定されています。</li>
+              </ul>
+              少し時間をおいてツイッターで再度投稿して状態を確認してみましょう。僕はこの設定でツイッタータグの画像が
+              表示される様になりました。なんかいろいろと今回も大変でした。
+          <br><br><br>
+
           <h1>ファビコンの設置</h1>
           <p><time datetime="2024-09-22">2024-09-22</time></p><hr>
           <p>ファビコンの設置を完了しました。</p>
