@@ -42,26 +42,26 @@
           <p>※ここは開発者向けのメモ、日常的なメモのページです</p>
 <!--ブログテンプレート
           <h1></h1>
-          <p><time datetime="2024-09-">2024-9-</time></p><hr>
-          <br>
-          -->
+            <p><time datetime="2024-09-">2024-9-</time></p><hr>
+            <br>
+            -->
           <h1>忙しい</h1>
           <p><time datetime="2024-09-24">2024-9-24</time></p><hr>
             <p>毎日が非常にいそがしいです。</p>
           <br>
 
-          <h1>サイトの検索エンジンのインデックス作成、プライバシー管理するrobots.txt</h1>
+          <h1>サイトの検索エンジンのインデックス作成、プライバシー管理するコード</h1>
           <p><time datetime="2024-09-23">2024-9-23</time></p><hr>
           <p>自身のサイトの検索エンジンのインデックス作成、サイトのプライバシーを管理する手段。</p>
           <p>それがrobots.txtというファイルです。</p>
-          <p>このファイルをサイトのルートディレクトリに入れて使います。</p>
+          <p>このファイルを自身のサイトのルートディレクトリに入れて使います。</p>
           <p>何を行うか詳しく書いていきます。</p>
-          <strong><p>まずrobots.txtファイルはこんな中身です。</p></strong>
-            <ul>
-              <li>User-agent: [クローラー名] : 全てのクローラーに全てのページを許可する
-                <br>Disallow: [禁止するパス] : 全てのクローラーに特定のディレクトリを禁止する
-                <br>Allow: [許可するパス] : 特定のクローラーに特定のページを禁止する</li>
-              </ul>
+          <strong><p>robots.txtファイルと中に書いてあるコード</p></strong>
+            <div class="highlight">
+              User-agent: [クローラー名]<br>
+              Disallow: [禁止するパス]<br>
+              Allow: [許可するパス]
+            </div>
           <strong><p>使用目的</p></strong>
             <ul>
               <li>特定のページや情報が検索エンジンにインデックスされないようにする</li>
@@ -73,8 +73,8 @@
               機密情報を隠す手段ではない。</p>
             <p>ということらしいです。もういろんな横文字もあって訳分かりません。</p>
             <br>
-          <h2>ツイッターにタグの画像が表示されない時、robots.txtを使う</h2>
-            <p>ツイッターのタグで画像が表示されなかったためrobots.txtを使用しました。</p>
+          <h2>ツイッターの投稿でタグの画像が表示されない時使うコード</h2>
+            <p>ツイッターの投稿でタグの画像が表示されない時にrobots.txtのコードを使用しました。</p>
             <p>robots.txtは画像が表示されない原因の一つです。
               僕はこれを設定すると解決しました。設定方法を書いていきます。</p>
             <p>まず状況を確認します。
@@ -88,12 +88,15 @@
             </p>
             <strong><p>robots.txtの設定</p></strong>
               <ul>
-                <li>VSCodeのルートディレクトリに"robots.txt"を作成</li>
-                <li>User-agent: *
-                  <br>Disallow: /private/
-                  <br>Allow: /
-                  <br>これを入力して保存してサイトにアップロード</li>
-                <li>サイトでhttps://iiyudana-blog.com(自分のサイトURL)/robots.txtを入力し検索</li>
+                <li>VSCodeにある自身のサイトのルートディレクトリに"robots.txt"を作成</li>
+                <br>
+                <div class="highlight">
+                  User-agent: *<br>
+                  Disallow: /private/<br>
+                  Allow: /
+                </div>
+                  <br>これを入力して保存。自身のサイトにアップロード</li>
+                <li>googleで " 自身のサイトのURL/robots.txt " を入力し検索</li>
                 <li>User-agent: *
                   <br>Disallow: /private/
                   <br>Allow: /

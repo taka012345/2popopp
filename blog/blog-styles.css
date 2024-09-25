@@ -24,6 +24,22 @@ a {
   position: relative;
 }
 
+.hr-style-1 {
+  border: none; /* 既定のスタイルを取り除く */
+  height: 3px; /* 高さを指定して太さを調整 */
+  background-color: #333; /* 背景色を設定 */
+  margin: 20px 0;
+}
+
+.highlight {
+  background-color: #fbf5ea; /* 淡い肌色 */
+  padding:  10px 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif; /* コード表示のためのフォント */
+  font-size: 16px;
+}
+
+
 /* ハンバーガーメニューアイコン */
 
 header {
