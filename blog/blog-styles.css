@@ -31,19 +31,11 @@ a {
   margin: 20px 0;
 }
 
-.highlight {
-  background-color: #fbf5ea; /* 淡い肌色 */
-  padding:  10px 20px;
-  border-radius: 10px;
-  font-family: Arial, sans-serif; /* コード表示のためのフォント */
-  font-size: 16px;
-}
-
 /* 目次のスタイル */
 #toc {
   background-color: #f0f0f0;
-  padding: 5px 0px 20px;
-  margin-bottom: 20px;
+  padding: 5px 0px 15px;
+  margin-bottom: 40px;
   border: 1px solid #ccc;
   list-style-type: disc;
   padding-left: 20px;
@@ -54,6 +46,14 @@ a {
   line-height: 1.8;
 }
 
+.highlight {
+  background-color: #fbf5ea; /* 淡い肌色 */
+  padding:  5px 10px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif; /* コード表示のためのフォント */
+  font-size: 16px;
+  line-height: 2.5;
+}
 
 /* ハンバーガーメニューアイコン */
 
