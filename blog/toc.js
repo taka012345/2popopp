@@ -1,18 +1,24 @@
-//　目次のJava
-document.addEventListener("DOMContentLoaded", function() {
-    const toc = document.querySelector('#toc');
-    const headings = document.querySelectorAll('h2');
+function generateToc(includeH1 = true) {
+    const toc = document.getElementById('toc');
 
-    headings.forEach((heading, index) => {
-        const id = `heading-${index}`;
-        heading.setAttribute('id', id);
+    const content = document.querySelector('.intoro');
+    if (!content) return;
 
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
-        link.textContent = heading.textContent;
-        link.setAttribute('href', `#${id}`);
+    const headers = includeH1
+        ? content.querySelectorAll('h1, h2')
+        : content.querySelectorAll('h2');
 
-        listItem.appendChild(link);
-        toc.appendChild(listItem);
+    headers.forEach((header, index) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+
+        const id = `header-${index}`;
+        header.id = id;
+
+        a.href = `#${id}`;
+        a.textContent = header.textContent;
+
+        li.appendChild(a);
+        toc.appendChild(li);
     });
-})
+}

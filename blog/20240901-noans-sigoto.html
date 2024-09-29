@@ -82,9 +82,9 @@
         <section class="intoro">
         <h1>住所や年齢、仕事は聞かれても答えなくて大丈夫【プライバシー】</h1>
           <p><time datetime="2024-09-01">2024-9-1</time>（更新日 : 2024-9-28）</p>
-        <div id="toc">
+        <div id="toc-container">
           <strong><p>もくじ</p></strong>
-          <ul></ul>
+          <ul id="toc"></ul>
         </div>
 
           
@@ -177,6 +177,11 @@
 
         </p>
         <script src="toc.js"></script>
+        <script>
+          window.onload = () => {
+            generateToc(false);
+          };
+        </script>
         </section>
       </article>
       
