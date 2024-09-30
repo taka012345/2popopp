@@ -39,6 +39,7 @@ a {
   border: 1px solid #ccc;
   list-style-type: disc;
   padding-left: 40px;
+
 }
 
 #toc li {
@@ -53,6 +54,11 @@ a {
   font-family: Arial, sans-serif; /* コード表示のためのフォント */
   font-size: 16px;
   line-height: 2.5;
+}
+
+.lighter-text {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.8em;
 }
 
 /* ハンバーガーメニューアイコン */
