@@ -22,3 +22,10 @@ window.addEventListener('scroll', function() {
     
     }
 });
+
+document.getElementById("memo-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    const dropdown = document.getElementById("dropdown-menu");
+    dropdown.classList.toggle("visible");
+});
+

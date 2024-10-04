@@ -94,6 +94,19 @@ header {
   transform: scale(1.1);
 }
 
+/* memoのリスト */
+.menu-dropdown {
+  display: none;
+}
+
+.menu-dropdown.visible {
+  display: block;
+}
+
+.clear {
+  clear: both;
+}
+
 /* ハンバーガーメニューの表示切り替え */
 #menu-toggle {
   display: none;
