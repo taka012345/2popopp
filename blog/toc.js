@@ -21,4 +21,4 @@ function generateToc(includeH1 = true) {
         li.appendChild(a);
         toc.appendChild(li);
     });
-}
+};

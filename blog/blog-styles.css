@@ -61,6 +61,19 @@ a {
   font-size: 0.8em;
 }
 
+/* memoのリスト */
+.menu-dropdown {
+  display: none;
+}
+
+.menu-dropdown.visible {
+  display: block;
+}
+
+.clear {
+  clear: both;
+}
+
 /* ハンバーガーメニューアイコン */
 
 header {
@@ -220,6 +233,46 @@ h2 {
   padding: 10px 15px;               /* テキストとバーとの余白 */
   margin: 10px 0;              /* 上下の余白 */
 }
+
+/* ボタンのコンテナ */
+.button-container {
+  text-align: center; /* ボタンを中央に配置 */
+  margin: 20px 0; /* 上下の余白を追加 */
+}
+
+/* 共通ボタンスタイル */
+.button-container a {
+  display: inline-block;
+  width: 110px; /* 同じ幅に固定 */
+  height: 30px; /* 同じ高さに固定 */
+  line-height: 30px; /* テキストをボタンの中央に表示 */
+  padding: 0; /* 余白をリセット */
+  font-size: 15px; /* テキストサイズを統一 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-align: center; /* テキストを中央に配置 */
+  box-sizing: border-box; /* パディングの影響を防ぐ */
+}
+
+.twitter-button {
+  background-color: #6fb5e1;
+}
+
+.twitter-button:hover {
+  background-color: #9cc9e4;
+}
+
+.youtube-button {
+  background-color: #e65b5b; /* YouTubeの赤色 */
+}
+
+.youtube-button:hover {
+  background-color: #e79595;
+}
+
 
 footer {
   background-color: #a5bce1;

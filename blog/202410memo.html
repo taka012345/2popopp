@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>いい湯だな - blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="blog-styles.css">
+    <link rel="stylesheet" href="responsive.css">
+   
+  </head> 
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <a href="../index.html">いい湯だな - blog</a>   
+        </div>
+        
+        <div class="header-right">
+          <div class="menu-links">
+            <a href="../blog/2024089memo.html" id="memo-link">memo</a>
+            <a href="../profile/index.html" >profile</a>
+          </div>
+
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+          <div class="menu-dropdown" id="dropdown-menu">
+            <a href="../blog/2024089memo.html" >2024/08,09</a>
+            <a href="../blog/202410memo.html">2024/10</a>
+          </div>
+
+        </div>
+        <div class="clear"></div>          
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="intoro">
+          <p>※ここは開発者向けのメモ、日常的なメモのページです</p>
+          <div class="toc-container">
+            <strong><p>もくじ</p></strong>
+            <ul id="toc"></ul>
+          </div>
+          <!--ブログテンプレート
+          <h1></h1>
+            <p><time datetime="2024-10-">2024-10-</time></p><hr>
+            <br>
+            -->
+          <h1>memoを月毎に分けました</h1>
+            <p><time datetime="2024-10-04">2024-10-04</time></p><hr>
+            <p>memoを月毎に分けました。</p>
+            <p>これだけでも結構大変でした。ある程度出来上がっているコードを修正する作業なので
+              一からつくるよりも難しいです。</p>
+            <p>以上takaでした。</p>
+            <br>
+
+          <h1>Googleホームのおすすめニュースを消す方法【iPhone】</h1>
+            <p><time datetime="2024-10-03">2024-10-03</time></p><hr>
+            <p>Googleホームのおすすめニュースを消す方法を書きます。</p>
+            <ol>
+              <li>iPhoneでGoogleアプリを開きます</li>
+              <li>右上にある丸いアカウントのアイコンをタップ</li>
+              <li>"設定" をタップ</li>
+              <li>"その他の設定" をタップ</li>
+              <li>"Discover" を無効にする</li>
+            </ol>
+            <p>以上です。</p>
+            <p>なぜGoogleはこのニュース表示を基本としたのか謎です。</p>
+            <p>検索バーしかないことがGoogleの良さだったのに、自らその良さを捨てています。</p>
+            <p>ただこれは個人の感想ですね。みんなはどう思っているかはわかりません。</p>
+            <br>
+            <h2>Macで作成したMicrosoft Wordのファイルを、iPhoneを使ってローソンで印刷する方法</h2>
+              <ol>
+                <li><a href="https://www.microsoft.com/ja-jp/microsoft-365/word/" target="_blank">ワードプレス</a>にアクセス</li>
+                <li>Microsoft Wordにログイン</li>
+                <li>左上、六文銭のようなマークを選択</li>
+                <li>Wordを選択</li>
+                <li>文章作成する（勝手に同期されるので保存しなくても大丈夫）</li>
+                <li>iPhoneにMicrosoft WordをDL</li>
+                <li>iPhoneのMicrosoft Wordにログイン</li>
+                <li>ローソンのプリンターと同期してPDFとして印刷</li>
+                <li>以上です</li>
+              </ol>
+            <p>以上takaでした。</p>
+            <br> 
+        </section>
+      </article>
+      <script src="toc.js"></script>
+      <script>
+        window.onload = () => {
+          generateToc(true);
+        };
+      </script>
+    </main>
+
+<!--下段のフッター-->
+<footer>
+  <p>いい湯だな - blog</p>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>
